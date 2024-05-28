@@ -1,0 +1,16 @@
+Assumptions
+
+1. Initial load up of the page, “No Record” will be displayed under Search History.
+
+2. Invalid inputs, such as blank entries or inputs that do not yield results from the API, will not be included in the search history. 
+
+3. A standard error toast message “Not found” were added for blank and invalid entries.
+
+4. Based on the designs in the Figma, I rounded the decimals of the temperatures to the nearest whole number.
+
+5. Created two separate objects, countryNameToCode and cityNameToCountryCode in utils.js to get the correct country code (2-alpha) as I found out that inputting “Korea” will return ‘’Korea, PL” and “Canada” will return “Cañada, ES”. This implementation was mainly to include the country codes in the search history, however, the limitations was that cities that are not capital cities of a country will be excluded.
+
+6. Mobile L – 425px were taken as the mobile viewport design provided in the Figma. Any viewports below will have components slightly off positioned. 
+
+Note:
+In the Figma, margins and paddings are not provided, and some of the component's appearance did not match the visual specifications provided as well. Therefore, I made efforts to replicate the design as closely as possible, incorporating my own adjustments to align it with the intended visual representation.

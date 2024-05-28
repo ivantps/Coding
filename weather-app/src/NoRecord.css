@@ -1,0 +1,9 @@
+.no-record {
+    display: flex;
+    justify-content: center;
+    /* Center align horizontally */
+    align-items: center;
+    /* Center align vertically */
+    height: 100%;
+    /* Set height to fill the container vertically */
+}
